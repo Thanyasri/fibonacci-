@@ -1,0 +1,11 @@
+num = int(input("Enter the no. of fibonacci terms: "))
+a = 0
+b = 1
+for n in range(0, num):
+           if(n <= 1):
+                      nth = n
+           else:
+                      nth = a + b
+                      a = b
+                      b = nth
+           print(nth)
